@@ -8,6 +8,7 @@ struct interfaces
 	void *client;
 	void *engine;
 	struct EntityList *entityList;
+	void *modelRender;
 }
 extern interfaces;
 

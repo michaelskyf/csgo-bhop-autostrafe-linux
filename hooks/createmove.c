@@ -1,8 +1,4 @@
-#include "../hooks.h"
-#include "../sdk/EntityList.h"
-#include "../sdk/engine.h"
-#include "../offsets.h"
-#include "../sdk/usercmd.h"
+#include "hooks.h"
 #include "createmove.h"
 #include <stdio.h>
 #include <math.h>

@@ -1,8 +1,6 @@
 #ifndef CLIENT_H
 #define CLIENT_H
 
-#include "recv.h"
-
 typedef enum ClassId {
     ClassId_BaseCSGrenadeProjectile = 9,
     ClassId_BreachChargeProjectile = 29,

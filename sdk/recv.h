@@ -4,9 +4,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-struct Vector {
-    float x, y, z;
-};
+#include "vector.h"
 
 typedef struct RecvProxyData {
     int pad;

@@ -6,10 +6,12 @@
 #include <string.h>
 
 #include "hooks.h"
-#include "memory.h"
-#include "utils/utils.h"
+#include "../memory.h"
+#include "../interfaces.h"
+#include "../utils/utils.h"
 
-#include "hooks/createmove.h"
+#include "createmove.h"
+#include "modelrender.h"
 
 struct hook hooks[NUM_FUNC];
 
@@ -51,6 +53,7 @@ void hooks_init(void)
         pagemask = ~(pagesize-1);
 
 	HOOK(CREATE_MOVE, hook_CreateMove, memory.clientMode, 25);
+	HOOK(MODEL_RENDER, hook_modelRender, interfaces.modelRender, 21);
 }
 
 void hooks_exit()

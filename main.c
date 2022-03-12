@@ -4,7 +4,7 @@
 #include "interfaces.h"
 #include "memory.h"
 #include "offsets.h"
-#include "hooks.h"
+#include "hooks/hooks.h"
 
 void *cheat_init(void *args)
 {

@@ -3,6 +3,10 @@
 
 #include <stdbool.h>
 
+#include "../offsets.h"
+#include "../sdk/sdk_common.h"
+#include "modelrender.h"
+
 struct hook
 {
 	void *hook;
@@ -17,6 +21,7 @@ void hooks_exit(void);
 enum functions
 {
 	CREATE_MOVE = 0,
+	MODEL_RENDER,
 	NUM_FUNC
 };
 

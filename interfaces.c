@@ -56,6 +56,7 @@ void interfaces_init(void)
 	interfaces.client = get_interface("./csgo/bin/linux64/client_client.so", "VClient");
 	interfaces.engine = get_interface("./bin/linux64/engine_client.so", "VEngineClient");
 	interfaces.entityList = get_interface("./csgo/bin/linux64/client_client.so", "VClientEntityList");
+	interfaces.modelRender = get_interface("./bin/linux64/engine_client.so", "VEngineModel");
 
 	printf("Interfaces loaded!\n");
 }
